@@ -74,3 +74,9 @@ if __name__ == "__main__":
   ]
   with open("readme.txt", "a") as file:
     file.write("\n".join(more_lines))
+
+  # Writing to a UTF-8 text file
+
+  quote = "成功を収める人とは人が投げてきたレンガでしっかりした基盤を築くことができる人のことである。"
+  with open("quotes.txt", "w", encoding = "utf-8") as file:
+    file.write(quote)
