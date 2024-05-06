@@ -64,3 +64,13 @@ if __name__ == "__main__":
     # file.writelines(lines)
 
     file.write("\n".join(lines))
+
+  # Appending text files
+
+  more_lines = [
+    "",
+    "Append text files",
+    "The End"
+  ]
+  with open("readme.txt", "a") as file:
+    file.write("\n".join(more_lines))
