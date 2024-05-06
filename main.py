@@ -45,3 +45,22 @@ if __name__ == "__main__":
   file.write("\n")
   file.writelines("\n")
   """
+
+  # Writing text file examples
+
+  """
+  The following example shows how to use the write() function to write a list of texts to a text file:
+  """
+
+  lines = [
+    "Readme",
+    "How to write text files in Python"
+  ]
+  with open("readme.txt", "w") as file:
+    # for line in lines:
+    #   file.write(line)
+    #   file.write("\n")
+
+    # file.writelines(lines)
+
+    file.write("\n".join(lines))
